@@ -248,6 +248,10 @@ p{
   margin-bottom: 0.5em;
 }
 
+header{
+  margin-bottom: 2em;
+}
+
 #intro {
   margin-top: 16em;
   text-align: center;
@@ -260,18 +264,11 @@ p{
   width: 600px;
 }
 
-p#first{
-  margin-top: 2em;
-}
-
-img#profile{
+#sidebar{
   float: left;
-  margin-right: 2em;
+  width: 210px;
+  height: 600px; 
 }
-
-
-
-
 
 
 
