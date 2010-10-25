@@ -33,17 +33,26 @@
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.5.min.js"></script>
-
+  <noscript>
+    
+  </noscript>
 </head>
-
 <body>
-
-  <div id="container">
+  <div id="intro" style="display:none;">
+    <img src="images/logo.jpeg" width="201" height="194" alt="Logo">
+  </div>
+  <div id="container" style="display:none;">
     <header>
-
+      <p>At only 23, Becky Maslen has already carved out a hugely successful career in both modelling and television 2011 promises to be an even bigger year for the 5&#x27;9&quot; yorkshire beauty, after this years success of her first ever e4 appearance. She looks set to continue a winning career over the next 12 months.</p>
     </header>
     
     <div id="main">
+      <p>I was born in Bradford, England on the 27th June 1987 to David and Linda Maslen. I started out life dancing, running and getting into mischief whenever my parents turned their backs. We lived in Cullingworth, Bradford for the first 9 years of my life. Then we moved to Halifax, where I attended Ryburn Valley High school. </p>
+      <p>As I enjoyed my modelling work I decided to go to beauty school where I qualified as a beautician. I like to make people feel good about themselves! </p>
+      <p>I first started modelling at the age of 15 when I was scouted my hometown of halifax I was quickly signed up and started modelling for various local companies. I then went on to working in television where I was a regular extra on ITV&#x27;s Emmerdale Farm. </p>
+      <p>I settled down working for a company in Leeds - my first 9 till 5 job. Stuck at it for 2 years then decided it wasn&#x27;t as fulfilling as modelling and television I was struck down by illness in late 2009 and after my operation decided I would try re-build my career as a model. 2011 I looks to be a great year for me! </p>
+      <p>You can follow becky on twitter www.twitter.com/beckymaslen enquiries for becky please email hello@beckymaslen.com </p>
+
 
     </div>
     
@@ -60,27 +69,13 @@
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
   
   
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end concatenated and minified scripts-->
-  
-  
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
 
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js"></script>
-  <script src="js/profiling/config.js"></script>
-  <!-- end profiling code -->
-
-
-  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
   <script>
-   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   var _gaq = [['_setAccount', 'A-19310577-1'], ['_trackPageview']];
    (function(d, t) {
     var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
@@ -88,6 +83,14 @@
     g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
+   
+   $('#intro').fadeIn(2000, function(){ 
+       $('#intro').animate({
+         marginTop: '1em',
+       }, 2000, function() {
+         $('#container').fadeIn();
+       });
+     });   
   </script>
   
 </body>

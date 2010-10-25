@@ -221,12 +221,20 @@ button {  width: auto; overflow: visible; }
 
 
  /* Primary Styles
-    Author: 
+    Author: orta therox
  */
 
 
+#intro {
+  margin-top: 16em;
+  text-align: center;
+  background: url('../images/headline-bg.jpeg') repeat-x;
+}
 
-
+#container {
+  margin: 1em auto;
+  width: 600px;
+}
 
 
 
