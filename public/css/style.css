@@ -224,17 +224,24 @@ button {  width: auto; overflow: visible; }
     Author: orta therox
  */
 
+ 
  @font-face {
- 	font-family: 'QuicksandLight';
+ 	font-family: 'QuicksandBook';
  	src: url('../fonts/Quicksand_Book-webfont.eot');
- 	src: local('☺'), url('../fonts/Quicksand_Book-webfont.woff') format('woff'), url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'), url('../fonts/Quicksand_Book-webfont.svg#webfontxOK7zMuM') format('svg');
+ 	src: local('☺'), url('../fonts/Quicksand_Book-webfont.woff') format('woff'), url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'), url('../fonts/Quicksand_Book-webfont.svg#webfontQvsv8Mp8') format('svg');
  	font-weight: normal;
  	font-style: normal;
  }
+ 
 
 p, h1{
   font-size: 1.2em;
-  font-family: 'QuicksandLight';
+ 	font-family: 'QuicksandBook';
+}
+
+
+h1{
+  font-size: 1.4em;
 }
 
 p{
