@@ -226,8 +226,8 @@ button {  width: auto; overflow: visible; }
 
  @font-face {
  	font-family: 'QuicksandLight';
- 	src: url('../fonts/Quicksand_Light-webfont.eot');
- 	src: local('☺'), url('../fonts/Quicksand_Light-webfont.woff') format('woff'), url('../fonts/Quicksand_Light-webfont.ttf') format('truetype'), url('../fonts/Quicksand_Light-webfont.svg#webfontxOK7zMuM') format('svg');
+ 	src: url('../fonts/Quicksand_Book-webfont.eot');
+ 	src: local('☺'), url('../fonts/Quicksand_Book-webfont.woff') format('woff'), url('../fonts/Quicksand_Book-webfont.ttf') format('truetype'), url('../fonts/Quicksand_Book-webfont.svg#webfontxOK7zMuM') format('svg');
  	font-weight: normal;
  	font-style: normal;
  }
