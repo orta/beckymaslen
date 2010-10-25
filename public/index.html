@@ -41,21 +41,22 @@
   <div id="intro" style="display:none;">
     <img src="images/logo.jpeg" width="201" height="194" alt="Logo">
   </div>
-  <div id="container" style="display:none;">
-    <header>
+  <div id="container">
+    <header style="display:none;">
       <h1><span class ="opener">At only 23, Becky Maslen </span>has already carved out a hugely successful career in both modelling and television. 2011 promises to be an even bigger year for the 5&#x27;9&quot; Yorkshire beauty, after this years success of her first ever E4 appearance. She looks set to continue a winning career over the next 12 months.</h1>
     </header>
-    <div id="sidebar">
-      <img src="images/profile-left.jpeg" id="profile" width="178" height="429" alt="Profile Shot">
-    </div>
-    <div id="main">
-      <p>I was born in Bradford, England on the 27th June 1987 to David and Linda Maslen. I started out life dancing, running and getting into mischief whenever my parents turned their backs. We lived in Cullingworth, Bradford for the first 9 years of my life. Then we moved to Halifax, where I attended Ryburn Valley High school. </p>
-      <p>As I enjoyed my modelling work I decided to go to beauty school where I qualified as a beautician. I like to make people feel good about themselves! </p>
-      <p>I first started modelling at the age of 15 when I was scouted in my hometown of Halifax. I was quickly signed up and started modelling for various local companies. I then went on to working in television where I was a regular extra on ITV&#x27;s Emmerdale Farm. </p>
-      <p>I settled down working for a company in Leeds - my first 9 till 5 job. Stuck at it for 2 years then decided it wasn&#x27;t as fulfilling as modelling and television I was struck down by illness in late 2009 and after my operation decided I would try re-build my career as a model. 2011 looks to be a great year for me! </p>
-      <p>You can follow becky on twitter at <br/> <a href="http://twitter.com/beckymaslen" title="www.twitter.com/beckymaslen"><img src="images/twitterbird.jpeg" width="24" height="14" alt="Twitterbird">twitter.com/beckymaslen</a> <br/>Enquiries for becky please email <a href="mailto:hello@beckymaslen.com?subject=website enquiry">hello@beckymaslen.com</a> </p>
-    </div>
-    
+    <section style="display:none;">
+      <div id="sidebar">
+        <img src="images/profile-left.jpeg" id="profile" width="178" height="429" alt="Profile Shot">
+      </div>
+      <div id="main">
+        <p>I was born in Bradford, England on the 27th June 1987 to David and Linda Maslen. I started out life dancing, running and getting into mischief whenever my parents turned their backs. We lived in Cullingworth, Bradford for the first 9 years of my life. Then we moved to Halifax, where I attended Ryburn Valley High school. </p>
+        <p>As I enjoyed my modelling work I decided to go to beauty school where I qualified as a beautician. I like to make people feel good about themselves! </p>
+        <p>I first started modelling at the age of 15 when I was scouted in my hometown of Halifax. I was quickly signed up and started modelling for various local companies. I then went on to working in television where I was a regular extra on ITV&#x27;s Emmerdale Farm. </p>
+        <p>I settled down working for a company in Leeds - my first 9 till 5 job. Stuck at it for 2 years then decided it wasn&#x27;t as fulfilling as modelling and television I was struck down by illness in late 2009 and after my operation decided I would try re-build my career as a model. 2011 looks to be a great year for me! </p>
+        <p>You can follow becky on twitter at <br/> <a href="http://twitter.com/beckymaslen" title="www.twitter.com/beckymaslen"><img src="images/twitterbird.jpeg" width="24" height="14" alt="Twitterbird">twitter.com/beckymaslen</a> <br/>Enquiries for becky please email <a href="mailto:hello@beckymaslen.com?subject=website enquiry">hello@beckymaslen.com</a> </p>
+      </div>
+    </section>    
     <footer>
       <p>site by <a href="http://ortatherox.com" style="color:white;">orta therox</a></p>
     </footer>
@@ -87,8 +88,10 @@
    $('#intro').fadeIn(2000, function(){ 
        $('#intro').animate({
          marginTop: '1em',
-       }, 2000, function() {
-         $('#container').fadeIn();
+       }, 1500, function() {
+         $('header').fadeIn(2000, function(){
+           $('section').fadeIn(1500);
+         });
        });
      });   
   </script>
